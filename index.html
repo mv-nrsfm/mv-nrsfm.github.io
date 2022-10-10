@@ -1,7 +1,286 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TWHGQ63');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH9910HT39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JH9910HT39');
+  </script>  
+
+  <meta charset="utf-8">
+  <meta name="description" content="High Fidelity 3D Reconstructions with Limited Physical Views">
+  <meta name="keywords" content="Multi-view-geometry, NRSfM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MV-NRSfM</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPF1LG1QMP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NPF1LG1QMP');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWHGQ63"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->  
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><br/>
+            High Fidelity 3D Reconstructions <br> with Limited Physical Views</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://mosamdabhi.github.io/">Mosam Dabhi</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://mightychaos.github.io/">Chaoyang Wang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://ksaluja15.github.io">Kunal Saluja</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.laszlojeni.com/">László A. Jeni</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/ian-fasel-ba66012">Ian R. Fasel</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.adelaide.edu.au/directory/simon.lucey">Simon Lucey</a><sup>1,3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Carnegie Mellon University,</span>
+            <span class="author-block"><sup>2</sup>Apple,</span>
+            <span class="author-block"><sup>3</sup>The University of Adelaide</span>
+          </div>
+
+          <div class="title is-4 has-text-danger">
+            <br/>
+            <span class="author-block">International Conference on 3D Vision - 3DV, 2021</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/abstract/document/9665845"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2110.11599"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://youtu.be/Jx7mJ_D88gg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mosamdabhi/neural-shape-prior"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://www.adelaide.edu.au/aiml/news/list/2022/08/01/new-ai-tech-to-bring-human-like-understanding-of-our-3d-world"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-newspaper"></i>
+                  </span>
+                  <span>Feature Post</span>
+                  </a>
+              </span>              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <video id="teaser" class="center" autoplay muted loop width="100%">
+          <source src="media/teaser.m4v"
+                  type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          This work generates 3D keypoint labels using 2D keypoints provided from just 2 uncalibrated cameras, compared to > 100 calibrated cameras!
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered" style="margin-bottom: 50px">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Multi-view triangulation is the gold standard for 3D reconstruction from 2D correspondences given known calibration and sufficient views. However in practice, expensive multi-view setups – involving tens sometimes hundreds of cameras – are required in order to obtain the high fidelity 3D reconstructions necessary for many modern applications. In this paper we present a novel approach that leverages recent advances in 2D-3D lifting using neural shape priors while also enforcing multi-view equivariance - and term this approach Multi-view Non-Rigid Structure-from-Motion (<b>MV-NRSfM</b>). We show how our method can achieve comparable fidelity to expensive calibrated multi-view rigs using a limited (2-3) number of uncalibrated camera views.
+          </p>
+
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-6">
+      <h2 class="title is-2">Overview Video</h2>
+      <div class="publication-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dl8PkeVucO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
+</section>
+
+
+<section class="section">
+  <div class="container">
+
+    <!-- Results header. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h1 class="title is-1">More Results</h1>
+        <div class="content has-text-justified">
+          We show results and baseline comparisons on three datasets. For all the datasets, we compare against triangulation that uses a substantially large (~ 30-50 for monkey dataset) number of <i>calibrated</i> camera views. We also compare against the single view NRSfM versus multi-view NRSfM (ours). Please see the paper for more details.
+        </div>
+      </div>
+    </div>
+    <!--/ Results header. -->
+
+  <div class="tabs is-toggle is-fullwidth">
+    <ul>
+      <li class="is-active"><a>Monkey dataset</a></li>
+      <li><a>Human dataset</a></li>
+      <li><a>Hand dataset</a></li>
+    </ul>
+  </div>
+  <!-- Results videos. -->
+  <div class="columns is-vcentered has-text-centered is-full-width">
+    <div class="column">
+      <div class="publication-video">        
+
+
+        <video class="interpolation-video tabs-content center" autoplay muted loop width="200%">
+          <source src="media/results/data_1/shape_and_color_compressed.mp4"
+                  type="video/mp4">
+        </video>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="publication-video">            
+
+        <video class="interpolation-video tabs-content center" autoplay muted loop width="100%">
+          <source src="media/results/data_2/shape_and_color_compressed.mp4"
+                  type="video/mp4">
+        </video>        
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{dabhi20213dv,
+  author      = {Dabhi, Mosam and Wang, Chaoyang and Saluja, Kunal and Jeni, Laszlo and Fasel, Ian and Lucey, Simon},
+  title       = {High Fidelity 3D Reconstructions with Limited Physical Views},
+  booktitle   = {International Conference on 3D Vision (3DV)},
+  year        = {2021},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/mosamdabhi" class="external-link" target="_blank" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
